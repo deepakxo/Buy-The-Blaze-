@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy The Blaze</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #111 0%, #000 60%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 24px 18px 40px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 22px;
+      letter-spacing: 1px;
+      font-weight: 600;
+      margin-bottom: 18px;
+      opacity: 0.9;
+    }
+
+    .album-box {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+      margin-bottom: 26px;
+    }
+
+    .album-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+
+    .btn {
+      padding: 16px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      background: linear-gradient(135deg, #1f1f1f, #0b0b0b);
+      border: 1px solid #222;
+      transition: all 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, #2a2a2a, #111);
+    }
+
+    .btn.paypal {
+      border: 1px solid #003087;
+    }
+
+    .btn.gpay {
+      border: 1px solid #0f9d58;
+    }
+
+    .whatsapp {
+      margin-top: 10px;
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    .whatsapp a {
+      color: #25D366;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      opacity: 0.4;
+    }
+
+    @media (max-width: 380px) {
+      .title { font-size: 20px; }
+      .btn { font-size: 15px; padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">BUY THE BLAZE</div>
+
+    <!-- Album Image -->
+    <div class="album-box">
+      <!-- Replace image URL below -->
+      <img src="https://raw.githubusercontent.com/deepakxo/Buy-The-Blaze-/main/theblaze.jpg" alt="Album Cover" />
+    </div>
+
+    <!-- Payment Links -->
+    <div class="links">
+      <!-- PayPal -->
+      <a class="btn paypal" href="https://raw.githubusercontent.com/deepakxo/Buy-The-Blaze-/main/pay%20pal.png" target="_blank">
+        Pay via PayPal
+      </a>
+
+      <!-- GPay -->
+      <a class="btn gpay" href="https://raw.githubusercontent.com/deepakxo/Buy-The-Blaze-/main/GooglePay_QR.png" target="_blank">
+        Pay via GPay
+      </a>
+    </div>
+
+    <!-- WhatsApp Confirmation -->
+    <div class="whatsapp">
+      ✅ After payment, send screenshot on
+      <br />
+      <a href="https://wa.me/918467876568" target="_blank">
+        WhatsApp: +91 8467876568
+      </a>
+    </div>
+
+    <div class="footer">
+      © 2026 · Buy The Blaze
+    </div>
+  </div>
+</body>
+</html>
