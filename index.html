@@ -105,7 +105,61 @@
       .title { font-size: 20px; }
       .btn { font-size: 15px; padding: 14px; }
     }
+      .exclusive {
+      margin: 30px 0 14px;
+      padding: 16px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #111, #000);
+      border: 1px dashed #444;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .vip-box {
+      display: none;
+      padding: 20px;
+      border-radius: 18px;
+      background: radial-gradient(circle at top, #0b0b0b, #000);
+      border: 1px solid #222;
+      margin-bottom: 24px;
+    }
+
+    .vip-box img {
+      width: 100%;
+      border-radius: 14px;
+      margin: 14px 0;
+    }
+
+    .cut-price {
+      text-decoration: line-through;
+      color: #777;
+      font-size: 14px;
+    }
+
+    .new-price {
+      font-size: 28px;
+      font-weight: 700;
+      color: #00ffcc;
+    }
+
+    .special-text {
+      margin-top: 10px;
+      font-size: 15px;
+      color: #ff4fd8;
+      text-shadow: 0 0 10px rgba(255,79,216,0.8);
+    }
+
   </style>
+  <script>
+    function openVip() {
+      const pass = prompt("Enter VIP password");
+      if (pass === "iamvip") {
+        document.getElementById("vipBox").style.display = "block";
+      } else {
+        alert("Wrong password");
+      }
+    }
+  </script>
 </head>
 <body>
   <div class="container">
@@ -130,12 +184,24 @@
       </a>
     </div>
 
+    <!-- Exclusive Members Section -->
+    <div class="exclusive" onclick="openVip()">
+      Exclusive price for special members
+    </div>
+
+    <div id="vipBox" class="vip-box">
+      <div class="cut-price">₹452.9</div>
+      <div class="new-price">₹49</div>
+      <img src="https://raw.githubusercontent.com/deepakxo/Buy-The-Blaze-/main/49rsqr.jpeg" alt="VIP QR" />
+      <div class="special-text">You’re special for me</div>
+    </div>
+
     <!-- WhatsApp Confirmation -->
     <div class="whatsapp">
       ✅ After payment, send screenshot on
       <br />
-      <a href="https://wa.me/918467876568" target="_blank">
-        WhatsApp: +91 8467876568
+      <a href="https://wa.me/91XXXXXXXXXX" target="_blank">
+        WhatsApp: +91 XXXXXXXXXX
       </a>
     </div>
 
